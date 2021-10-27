@@ -1,0 +1,12 @@
+<router-outlet>
+<div class="container">  
+  <h1>Phone number validator</h1>
+      <br>
+      <input type="text"    [(ngModel)]="number" (countryChange)="onCountryChange($event)" ng2TelInput />
+      <br>
+      <br>
+<button class="btn btn-primary" type="submit" (click)="submit()" >Submit</button>  &nbsp;
+<button class="btn btn-primary" type="reset" (click)="reset()">Reset</button>  
+</div>  
+</router-outlet>
+
